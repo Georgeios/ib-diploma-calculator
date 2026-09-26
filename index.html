@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><title>IB Diploma Points & GPA Tracker | Open-Source Utility</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IB Diploma Points & Core Matrix Calculator</h1>
+      <p>An open-source utility for IB students to project Diploma scores and assess passing conditions.</p>
+    </header>
+    <main>
+      <section class="calculator-card">
+        <h2>Enter Subject Predictions (1 - 7)</h2>
+        <div class="subject-grid">
+          <div class="field"><label>HL 1:</label><input type="number" id="hl1" min="1" max="7" value="6"></div>
+          <div class="field"><label>HL 2:</label><input type="number" id="hl2" min="1" max="7" value="6"></div>
+          <div class="field"><label>HL 3:</label><input type="number" id="hl3" min="1" max="7" value="5"></div>
+          <div class="field"><label>SL 1:</label><input type="number" id="sl1" min="1" max="7" value="6"></div>
+          <div class="field"><label>SL 2:</label><input type="number" id="sl2" min="1" max="7" value="7"></div>
+          <div class="field"><label>SL 3:</label><input type="number" id="sl3" min="1" max="7" value="6"></div>
+        </div>
+        <h2>Core Requirements (TOK & EE)</h2>
+        <div class="core-grid">
+          <div class="field"><label>Theory of Knowledge (TOK):</label>
+            <select id="tok"><option value="A">A</option><option value="B" selected>B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+          </div>
+          <div class="field"><label>Extended Essay (EE):</label>
+            <select id="ee"><option value="A" selected>A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option><option value="E">E</option></select>
+          </div>
+        </div>
+        <button id="calc-btn" class="btn">Evaluate Diploma Status</button>
+        <div id="results" class="results-box"></div>
+      </section>
+    </main>
+    <footer><p>Created by Georgios Iosifidis | Open-Source MIT License</p></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
